@@ -91,15 +91,13 @@
   </div>
   <div class="header-right">
     <div class="header-time" id="clock"></div>
-    <a class="btn-sheet"
-       href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAgwRLV4q5K3fTPL7g5GT7BEJ8DRyM0ZpTsR_3c1EFsm02k5WWCaTpXB0damDhu7KJBKlBg7yZnKyj/pub"
-       target="_blank">
+    <button class="btn-sheet" onclick="abrirPlanilla()">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
         <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4Z"/>
       </svg>
       Editar planilla
-    </a>
+    </button>
   </div>
 </header>
 
@@ -160,6 +158,10 @@
 <script>
 // URL del CSV de Google Sheets
 var CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTAgwRLV4q5K3fTPL7g5GT7BEJ8DRyM0ZpTsR_3c1EFsm02k5WWCaTpXB0damDhu7KJBKlBg7yZnKyj/pub?gid=0&single=true&output=csv';
+
+function abrirPlanilla() {
+  window.open('https://docs.google.com/spreadsheets/d/1_t8OzrjEXPnR4bPoFG9HyHttfyYTNOXq1dKOaYdRm40/edit', '_blank');
+}
 
 // Reloj
 function tick() {
